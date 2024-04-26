@@ -16,6 +16,7 @@ html {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   background-color: #1b1919;
 }
 
@@ -69,14 +70,14 @@ ol {
 
 .search-form {
   display: flex;
-  inline-size: 713spx;
+  inline-size: 713px;
   block-size: 54px;
   justify-content: flex-start;
   align-items: flex-end;
   gap: 39px;
-  font-family: "Fira Sans Condensed";
-  font-size: 18px;
-  font-weight: 400;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   line-height: 21.6px;
 }
 
@@ -142,8 +143,8 @@ ol {
 
 .button {
   color: #fff;
-  font-family: "Fira Sans Condensed";
-  font-size: 18px;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: 700;
   line-height: 21.6px;
   text-align: center;
@@ -157,8 +158,100 @@ ol {
   block-size: 34px;
 }
 
-.search-form__label:has(.search-form__textfield):active {
-  border: 1px solid #fff;
+.content__details {
+  display: flex;
+  flex-direction: column;
+  block-size: 534px;
+  inline-size: 399px;
+  margin-inline-start: -2px;
+  margin-block-start: 4px;
+  gap: 24px;
+}
+
+.title {
+  block-size: 209px;
+  inline-size: 260px;
+  margin-block-start: 2px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-block-size: 298px;
+  max-inline-size: 400px;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+}
+
+.content__list-item {
+  margin-block-end: 30px;
+}
+
+.content__list:last-child {
+  margin-block-end: 0;
+}
+
+.content__card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+}
+
+.content__video-card {
+  display: flex;
+  block-size: 107px;
+  inline-size: 100%;
+}
+
+.content__video-card-description-container {
+  block-size: 100%;
+  inline-size: 202px;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 5px 10px 4px 5px;
+}
+
+.content__video-card-description {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 16.2px;
+  text-align: left;
+}
+
+.content__video-card-thumbnail {
+  object-fit: scale-down;
+  object-position: center;
+  margin-block: 1px;
+}
+
+.more-button {
+  block-size: 34px;
+  inline-size: 100%;
 }
 
 .search-form__checkbox + .search-form__pseudo-checkbox:active {
@@ -204,103 +297,8 @@ ol {
   border: 1px solid #fff;
 }
 
-.content__details {
-  display: flex;
-  flex-direction: column;
-  block-size: 534px;
-  inline-size: 399px;
-  margin-inline-start: -2px;
-  margin-block-start: 4px;
-  gap: 24px;
-}
-
-.title {
-  block-size: 209px;
-  inline-size: 260px;
-  margin-inline-start: 2px;
-  margin-block-start: 2px;
-  justify-content: flex-end;
-  align-items: flex-start;
-  font-family: Oswald;
-  font-size: 75px;
-  font-weight: 700;
-  line-height: 70.5px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.content__accent {
-  color: #545050;
-}
-
-.content__list {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  block-size: 298px;
-  inline-size: 100%;
-  overflow: hidden auto;
-  scrollbar-width: thin;
-}
-
-.content__list-item {
-  block-size: 107px;
-  inline-size: 394px;
-  margin-block-end: 30px;
-}
-
-.content__list:last-child {
-  margin-block-end: 0;
-}
-
-.content__card-link {
-  display: block;
-  margin: 1px;
-  text-decoration: none;
-  color: #fff;
-}
-
-.content__card-link_current {
-  background-color: #545050;
-}
-
-.content__video-card {
-  display: flex;
-  align-items: flex-start;
-}
-
-.content__video-card-description-container {
-  block-size: 100%;
-  inline-size: 206px;
-}
-
-.content__video-card-title {
-  font-family: Oswald;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: left;
-  text-transform: uppercase;
-  margin: 5px 10px 4px 5px;
-}
-
-.content__video-card-description {
-  font-family: "Fira Sans Condensed";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 16.2px;
-  text-align: left;
-}
-
-.content__video-card-thumbnail {
-  block-size: 103px;
-  inline-size: 194px;
-  margin: 2px;
-}
-
-.more-button {
-  block-size: 34px;
-  inline-size: 399px;
+.search-form__label:has(.search-form__textfield):active {
+  border: 1px solid #fff;
 }
 
 .visually-hidden {
