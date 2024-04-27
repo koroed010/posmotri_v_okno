@@ -306,6 +306,14 @@ ol {
   border: 1px solid #fff;
 }
 
+.preloader {
+  display: flex;
+  overflow: auto;
+  inset: 0;
+  object-fit: fill;
+  block-size: 100%;
+}
+
 .error {
   position: absolute;
   inset: 0;
